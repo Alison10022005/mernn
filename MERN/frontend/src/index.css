@@ -1,0 +1,955 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background: #4e4e4e;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+  
+}
+
+.Navbar_agrupacion{
+    background: red;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .purchase-form input {
+    color: black; 
+    background-color: white; 
+  }
+
+  .HeaderYNav{
+
+    position: relative;
+    background: url(/img/HeaderHamburguesa.jpg) no-repeat center center;
+    background-size: cover; /* Ocupa todo el tamaño de la pantalla la imagen */
+    min-height: 500px;
+   
+    height: 600px;
+    margin: 0%;
+    padding: 40px;
+    
+  }
+
+  .text-3xl {
+
+    font-size: 3em;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px rgba(53, 52, 52, 0.76);   }
+  
+
+    .text-lg{
+      text-shadow: 2px 2px 5px rgba(53, 52, 52, 0.76); 
+    }
+
+  .home-container{
+    margin: 20% 0%;
+  }
+
+
+  .CategoriesHome {
+
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    font-weight: bold; /* Hacer el texto más destacado */
+    font-weight: bold; /* Texto en negrita */
+    font-style: italic; /* Texto en cursiva */
+   
+  }
+  .CategoriesHome :hover {
+    transition: all 0.3s ease; /* Transición suave */
+    color: rgb(0, 0, 0); /* Cambio de color de texto */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.76); 
+  }
+
+  .bg-indigo-500 {
+    background-color: rgb(155, 60, 60); /* Color de fondo */
+    border: 2px solid black; /* Borde negro de 2px */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: all 0.3s ease; /* Transición suave para cambios */
+  }
+  
+.bg-indigo-500:hover {
+  background-color: rgb(0, 0, 0); /* Fondo más oscuro al pasar el mouse */
+  border-color: #e70f07; /* Cambia el color del borde en el hover */
+  color: white; /* Cambia el color del texto cuando se pasa el mouse */
+}
+
+
+.LogoDisplay{
+  display: flex;
+  gap: 5px;
+
+}
+
+.LogoFoorter{
+  width: 150px;
+  height: 150px;
+  border-radius: 14vh;
+}
+
+
+
+.FooterContainer {
+  background-color: #2d2d2d; /* Fondo oscuro */
+  color: white; /* Texto blanco */
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Alinea el contenido principal en columna */
+  gap: 20px;
+}
+
+.FooterRow {
+  display: flex;
+  justify-content: space-around; /* Espaciado entre columnas */
+  flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+}
+
+.Columna_1 {
+  display: flex;
+  flex-direction: column; /* Contenido dentro de la sección alineado en columna */
+  gap: 10px; /* Espaciado entre los elementos internos */
+  text-align: center; /* Centra el texto */
+  flex: 1; /* Ajusta el ancho de cada columna de forma proporcional */
+  min-width: 200px; /* Tamaño mínimo para mantener consistencia */
+}
+
+.LogoFooter {
+  width: 100px; /* Ajusta el tamaño del logo */
+  margin: 0 auto 10px; /* Centra el logo horizontalmente y da espacio inferior */
+}
+
+.RedesSociales a img {
+  width: 100px;
+  margin: 0 5px; /* Espaciado entre íconos */
+}
+
+.FooterBottom {
+  text-align: center; /* Centra el pie de página */
+  padding-top: 10px;
+  border-top: 1px solid #555; /* Línea separadora del pie de página */
+}
+
+hr{
+  background-color: white;
+  height: 15px;
+  width: 100%;
+}
+
+.text-xl{
+
+
+  font-size: 2em;
+  border-radius: 5px;
+  text-shadow: 2px 2px 5px rgba(53, 52, 52, 0.76); 
+  text-align: center;
+  margin: 2px 0px 50px 0px;
+ }
+ 
+.text-xl:hover{
+
+  transition: all 0.3s ease; /* Transición suave */
+  color: rgb(0, 0, 0); /* Cambio de color de texto */
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.76); 
+}
+
+/*      ----------------  Register            ------------*/
+
+.bg-sky-500{
+
+  background-color: rgb(155, 60, 60); /* Color de fondo */
+  border: 2px solid black; /* Borde negro de 2px */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave para cambios */
+
+}
+
+.bg-sky-500:hover{
+  background-color: rgb(0, 0, 0); /* Fondo más oscuro al pasar el mouse 
+*/
+border-color: #e70f07; /* Cambia el color del borde en el hover */
+color: white; /* Cambia el color del texto cuando se pasa el mouse */
+}
+
+.LogoRegister{
+
+  width: 70px;
+  height: 70px;
+  border-radius: 40px;
+  margin: 0px 0px;
+
+}
+
+.DisplayRegister{
+
+  display: flex;
+  gap: 10px;
+}
+
+
+
+
+.bg-zinc-800 {
+
+  border: 2px solid #e70f07; /* Borde sólido rojo */
+  border-radius: 8px; 
+  padding: 50px; /* Espaciado interno para que el contenido no esté 
+pegado al borde */
+}
+
+
+.product-detail{
+  width: 30%;
+  height: 30%;
+}
+
+
+/*------------- detalles del producto ----------------*/
+
+
+.product-detail{
+
+  background-color: brown;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #000000d3;
+  max-width: 1200px; /* Ancho máximo deseado */
+  width: 810px;
+  height:40% ;
+  margin: 10px 0px 5px 0px;
+  margin: 0 auto; /* Centra el contenedor */
+  
+}
+
+.columna_uno{
+
+  flex: 1;
+  margin: 10px;
+}
+
+.ProductContenedor{
+
+  display: flex;
+  width: 100%;
+
+}
+
+.right{
+
+  margin: 100px 0px 0px 30px;
+}
+ 
+.Img-detalles{
+
+  border-radius: 10px;
+}
+
+.botondetail{
+
+
+  background-color: rgb(255, 255, 255); /* Color de fondo */
+  color: black;
+  border: 2px solid black; /* Borde negro de 2px */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave para cambios */
+
+}
+ 
+.botondetail:hover{
+
+  background-color: rgb(0, 0, 0); /* Fondo más oscuro al pasar el mouse 
+  */
+  border-color: #e70f07; /* Cambia el color del borde en el hover */
+  color: white; /* Cambia el color del texto cuando se pasa el mouse */
+
+}
+
+.quantifyDetail{
+
+  font-size: 1.2em;
+  text-shadow: 2px 2px 5px rgba(53, 52, 52, 0.76);
+}
+
+/* ----------------------- purshase form -----------------.------*/
+
+.purchase-form{
+
+  background-color: brown;
+  padding: 50px;
+  width: 60%;
+  height: 600px;
+  border: 2px solid #000000d3;
+  border-radius: 10px;
+  margin: 0% 20%;
+  
+
+  
+}
+
+.h1_purchase{
+  text-align: center;
+  font-size: 2em;
+text-shadow: 2px 2px 5px rgba(53, 52, 52, 0.76);
+margin: 0px 0px 50px 0px ;
+
+}
+
+.h2_purchase{
+
+  text-shadow: 2px 2px 5px rgba(39, 38, 38, 0.76);
+  
+}
+
+.InputPurchase{
+
+  border-radius: 2px;
+  margin: 5px;
+  color: black;
+  border: 2px solid black; 
+  
+}
+   
+input {
+  all: unset;
+}
+
+.buttons{
+
+  text-align: center;
+  margin: 60px 0px;
+}
+
+.buttons_uno{
+
+  margin: 0px 20px;
+}
+
+.DisplayFlexPurchase{
+  display: flex;
+  width: 100%;
+
+}
+
+.inputcolumtwo{
+
+  margin: 0px 0px 0px 10px;
+}
+
+.marginTelefono{
+  margin: 0px 0px 0px 5px;
+}
+
+.purchase-form {
+    width: 90%; /* Aumenta el ancho en pantallas más pequeñas */
+    height: auto; /* Ajusta la altura automáticamente */
+    padding: 30px; /* Reduce el espaciado interno */
+    margin: 10% auto; /* Centra el formulario y reduce el margen lateral */
+  }
+
+  .h1_purchase {
+    font-size: 1.8em; /* Ajusta el tamaño del encabezado */
+    margin: 0px 0px 30px 0px; /* Ajusta el margen inferior */
+  }
+
+  .h2_purchase {
+    font-size: 1.4em; /* Ajusta el tamaño de los subtítulos */
+  }
+
+  .InputPurchase {
+    width: 100%; /* Hace que los campos de entrada ocupen todo el ancho disponible */
+    margin: 10px 0px; /* Añade más espacio entre campos */
+  }
+
+  .buttons {
+    margin: 40px 0px; /* Ajusta el margen de los botones */
+  }
+
+  .buttons_uno {
+    margin: 10px 0px; /* Añade más espacio entre los botones */
+  }
+
+  .DisplayFlexPurchase {
+    flex-direction: column; /* Cambia el diseño a columna en pantallas pequeñas */
+    gap: 20px; /* Añade espacio entre los elementos */
+  }
+
+  .inputcolumtwo {
+    margin: 10px 0px; /* Ajusta el margen */
+  }
+
+  .marginTelefono {
+    margin: 10px 0px; /* Ajusta el margen */
+  }
+
+.imgSocial{
+  width: 30px;
+  height: 70px;
+  border-radius: 60px;
+}
+
+.Welcometitle{
+
+  font-size: 2em;
+  border-radius: 5px;
+text-shadow: 2px 2px 5px rgba(53, 52, 52, 0.76); 
+text-align: center;
+margin: 2px 0px 50px 0px;
+}
+
+
+
+
+
+/***--------------------------MEDIA REPONSIVE TABLE---------------------------.------------****/
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+      font-size: 16px;
+    }
+  
+    .Navbar_agrupacion {
+      height: 60px; 
+    }
+  
+    .modal {
+      padding: 10px;
+    }
+  
+    .modal-content {
+      width: 90%; 
+      max-width: 600px; 
+    }
+  
+    .HeaderYNav {
+      height: 500px; 
+      padding: 20px;
+      background-size: cover; 
+    }
+  
+    .text-3xl {
+      font-size: 2.5em; 
+    }
+  
+    .text-lg {
+      font-size: 1.2em; 
+    }
+  
+    .home-container {
+      margin: 10% 5%; 
+    }
+  
+    .CategoriesHome {
+      font-size: 1.2em; 
+    }
+  
+    .bg-indigo-500 {
+      padding: 8px; 
+      border-radius: 4px; 
+    }
+  
+    .LogoDisplay {
+      gap: 10px; 
+    }
+  
+    .LogoFoorter {
+      width: 120px; 
+      height: 120px; 
+      border-radius: 12vh; 
+    }
+  }
+  
+  .FooterContainer {
+    padding: 15px; 
+    gap: 15px; 
+    flex-direction: column; 
+  }
+
+  .FooterRow {
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+  }
+
+
+
+
+  .LogoFooter {
+    width: 80px; 
+    margin: 0 auto 8px; 
+  }
+
+  .FooterBottom {
+    padding-top: 8px; 
+    font-size: 0.9em;
+  }
+
+  hr {
+    height: 10px; 
+  }
+
+  .text-xl {
+    font-size: 1.8em; 
+    margin: 2px 0px 30px 0px; 
+  }
+
+  .bg-sky-500 {
+    padding: 8px; 
+    border-radius: 4px; 
+  }
+
+  .LogoRegister {
+    width: 60px; 
+    height: 60px; 
+    border-radius: 30px; 
+    margin: 0; 
+  }
+
+
+
+  .bg-zinc-800 {
+    padding: 30px; 
+    border-radius: 6px; 
+  }
+
+  .product-detail {
+    max-width: 90%; 
+    width: auto; 
+    height: auto; 
+    padding: 20px; 
+    margin: 20px auto; 
+  }
+
+  .columna_uno {
+    margin: 5px; 
+  }
+
+  .ProductContenedor {
+    flex-direction: column;
+    align-items: center; 
+    gap: 20px; 
+  }
+
+  .right {
+    margin: 20px 0 0 0; 
+  }
+
+  .Img-detalles {
+    max-width: 80%; 
+    height: auto; 
+    border-radius: 8px; 
+  }
+
+  .botondetail {
+    padding: 8px; 
+    font-size: 1em; 
+    border-radius: 4px; 
+  }
+
+  .quantifyDetail {
+    font-size: 1em; 
+  }
+
+  .w-full {
+    width: 300px;
+  }
+
+.bg-zinc-800{
+
+  width: 500px;
+}
+
+.purchase-form {
+  width: 90%; 
+  height: auto; 
+  padding: 30px; 
+  margin: 10% auto; 
+}
+
+.h1_purchase {
+  font-size: 1.8em; 
+  margin: 0px 0px 30px 0px; 
+}
+
+.h2_purchase {
+  font-size: 1.4em; 
+}
+
+.InputPurchase {
+  width: 100%; 
+  margin: 10px 0px;
+}
+
+.buttons {
+  margin: 40px 0px; 
+}
+
+.buttons_uno {
+  margin: 10px 0px; 
+}
+
+.DisplayFlexPurchase {
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.inputcolumtwo {
+  margin: 10px 0px; 
+}
+
+.marginTelefono {
+  margin: 10px 0px; 
+}
+
+  }
+
+
+  @media screen and (max-width: 767px) {
+    body {
+      background: #4e4e4e;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .Navbar_agrupacion {
+      background: red;
+      padding: 10px; /* Asegura que haya un margen interno */
+    }
+  
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.7); /* Fondo más oscuro para mejorar visibilidad */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px; /* Agregar padding para mejorar la experiencia en pantallas pequeñas */
+    }
+  
+    .modal-content {
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      width: 90%; /* Ajusta el ancho del modal para pantallas más pequeñas */
+      max-width: 400px; /* Limita el ancho máximo */
+    }
+  
+    .purchase-form input {
+      color: black;
+      background-color: white;
+      width: 100%; /* Asegura que los campos de entrada se adapten al ancho */
+      padding: 10px;
+      margin: 8px 0; /* Añade margen entre los campos */
+    }
+  
+    .HeaderYNav {
+      position: relative;
+      background: url(/img/HeaderHamburguesa.jpg) no-repeat center center;
+      background-size: cover;
+      min-height: 300px; /* Ajusta la altura para pantallas pequeñas */
+      height: 350px;
+      margin: 0;
+      padding: 20px; /* Reduce el padding para móviles */
+    }
+  
+    .text-3xl {
+      font-size: 1.5em; /* Ajusta el tamaño de texto en pantallas pequeñas */
+      text-shadow: 2px 2px 5px rgba(53, 52, 52, 0.76);
+    }
+  
+    .text-lg {
+      font-size: 1em; /* Reduce el tamaño del texto */
+      text-shadow: 2px 2px 5px rgba(53, 52, 52, 0.76);
+    }
+  
+    .home-container {
+      margin: 10% 5%; /* Reduce el margen para que no ocupe demasiado espacio */
+    }
+  
+    .CategoriesHome {
+      font-size: 1.2em; /* Ajusta el tamaño de la fuente */
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      font-style: italic;
+      text-align: center; /* Centra el texto */
+    }
+  
+    .CategoriesHome:hover {
+      transition: all 0.3s ease;
+      color: rgb(0, 0, 0);
+      text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.76);
+    }
+  
+    .bg-indigo-500 {
+      background-color: rgb(155, 60, 60);
+      border: 2px solid black;
+      padding: 8px;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+  
+    .bg-indigo-500:hover {
+      background-color: rgb(0, 0, 0);
+      border-color: #e70f07;
+      color: white;
+    }
+  
+    .LogoDisplay {
+      display: flex;
+      flex-direction: column; /* Cambia la disposición de los logos a columna */
+      align-items: center;
+      gap: 10px;
+    }
+  
+    .LogoFoorter {
+      width: 100px; /* Reduce el tamaño del logo */
+      height: 100px;
+      border-radius: 14vh;
+    }
+
+    .FooterContainer {
+      background-color: #2d2d2d;
+      color: white;
+      padding: 15px;
+      display: flex;
+      flex-direction: column; /* Alinea el contenido en columna */
+      gap: 15px; /* Reduce el espacio entre los elementos */
+    }
+  
+    .FooterRow {
+      display: flex;
+      justify-content: center; /* Alinea las columnas al centro */
+      flex-wrap: wrap; /* Permite que las columnas se ajusten en pantallas pequeñas */
+      gap: 10px; /* Agrega algo de espacio entre las columnas */
+    }
+  
+    .Columna_1 {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+      flex: 1;
+      min-width: 150px; /* Reduce el tamaño mínimo para dispositivos móviles */
+    }
+  
+    .LogoFooter {
+      width: 80px; /* Reduce el tamaño del logo */
+      margin: 0 auto 10px;
+    }
+  
+    .RedesSociales a img {
+      width: 40px; /* Ajusta el tamaño de los íconos de redes sociales */
+      margin: 5px;
+    }
+  
+    .FooterBottom {
+      text-align: center;
+      padding-top: 10px;
+      border-top: 1px solid #555;
+      font-size: 0.9em; /* Reduce el tamaño de la fuente para mejor visibilidad */
+    }
+  
+    hr {
+      background-color: white;
+      height: 3px; /* Reduce la altura de la línea separadora */
+      width: 100%;
+      margin: 10px 0;
+    }
+  
+    .text-xl {
+      font-size: 1.5em; /* Ajusta el tamaño de la fuente */
+      text-align: center;
+      margin: 10px 0; /* Reduce el margen para que se vea más limpio */
+    }
+  
+    .text-xl:hover {
+      transition: all 0.3s ease;
+      color: rgb(0, 0, 0);
+      text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.76);
+    }
+  }
+
+    @media screen and (max-width: 767px) {
+
+      /* Registro */
+      .bg-sky-500 {
+        background-color: rgb(155, 60, 60);
+        border: 2px solid black;
+        padding: 8px; /* Reduce el padding para pantallas más pequeñas */
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        font-size: 0.9em; /* Ajusta el tamaño de la fuente */
+      }
+    
+      .bg-sky-500:hover {
+        background-color: rgb(0, 0, 0);
+        border-color: #e70f07;
+        color: white;
+      }
+    
+      .LogoRegister {
+        width: 50px; /* Reduce el tamaño del logo */
+        height: 50px;
+        border-radius: 40px;
+        margin: 0px 0px;
+      }
+    
+      .DisplayRegister {
+        display: flex;
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        gap: 10px;
+      }
+    
+      .bg-zinc-800 {
+        border: 2px solid #e70f07;
+        border-radius: 8px;
+        padding: 30px; /* Reduce el padding en pantallas pequeñas */
+      }
+    
+      /* Detalles del producto */
+      .product-detail {
+        background-color: brown;
+        padding: 20px; /* Reduce el padding */
+        border-radius: 10px;
+        border: 2px solid #000000d3;
+        max-width: 100%; /* Ajusta el ancho máximo */
+        width: 100%; /* Hace que el ancho ocupe el 100% */
+        height: auto; /* Ajusta la altura para adaptarse mejor */
+        margin: 10px 0px 5px 0px;
+        margin: 0 auto;
+      }
+    
+      .columna_uno {
+        flex: 1;
+        margin: 10px;
+      }
+    
+      .ProductContenedor {
+        display: flex;
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        width: 100%;
+      }
+    
+      .right {
+        margin: 50px 0px 0px 30px;
+      }
+    
+      .Img-detalles {
+        border-radius: 10px;
+        width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+      }
+    
+      .botondetail {
+        background-color: rgb(255, 255, 255);
+        color: black;
+        border: 2px solid black;
+        padding: 8px; /* Reduce el padding */
+        border-radius: 5px;
+        transition: all 0.3s ease;
+        font-size: 1em; /* Ajusta el tamaño de la fuente */
+      }
+    
+      .botondetail:hover {
+        background-color: rgb(0, 0, 0);
+        border-color: #e70f07;
+        color: white;
+      }
+    
+      .quantifyDetail {
+        font-size: 1em; /* Ajusta el tamaño de la fuente */
+        text-shadow: 2px 2px 5px rgba(53, 52, 52, 0.76);
+      }
+
+      .purchase-form {
+        background-color: brown;
+        padding: 30px; /* Reduce el padding */
+        width: 90%; /* Aumenta el ancho del formulario */
+        height: auto; /* Ajusta la altura automáticamente */
+        border: 2px solid #000000d3;
+        border-radius: 10px;
+        margin: 10% auto; /* Centra el formulario y reduce el margen lateral */
+      }
+    
+      .h1_purchase {
+        text-align: center;
+        font-size: 1.8em; /* Ajusta el tamaño del encabezado */
+        text-shadow: 2px 2px 5px rgba(53, 52, 52, 0.76);
+        margin: 0px 0px 30px 0px; /* Ajusta el margen inferior */
+      }
+    
+      .h2_purchase {
+        font-size: 1.4em; /* Ajusta el tamaño de los subtítulos */
+        text-shadow: 2px 2px 5px rgba(39, 38, 38, 0.76);
+      }
+    
+      .InputPurchase {
+        width: 100%; /* Hace que los campos de entrada ocupen todo el ancho disponible */
+        margin: 10px 0px; /* Añade más espacio entre los campos */
+        padding: 10px; /* Añade un poco de padding dentro de los campos */
+        border-radius: 5px; /* Bordes redondeados */
+        border: 2px solid black; /* Borde negro */
+      }
+    
+      .buttons {
+        text-align: center;
+        margin: 40px 0px; /* Ajusta el margen de los botones */
+      }
+    
+      .buttons_uno {
+        margin: 10px 0px; /* Añade más espacio entre los botones */
+      }
+    
+      .DisplayFlexPurchase {
+        display: flex;
+        flex-direction: column; /* Cambia el diseño a columna */
+        gap: 20px; /* Añade espacio entre los elementos */
+        width: 100%;
+      }
+    
+      .inputcolumtwo {
+        margin: 10px 0px; /* Ajusta el margen */
+      }
+    
+      .marginTelefono {
+        margin: 10px 0px; /* Ajusta el margen */
+      }
+    
+      .FondoLoginYRegister{
+
+       width: 300px;
+      }
+
+      .DisplayRegister{
+        width: 600px;
+      }
+    
+    }
+    
+  
